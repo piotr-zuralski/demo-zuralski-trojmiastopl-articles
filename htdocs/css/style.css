@@ -1,0 +1,45 @@
+@import url(/css/vendor/yaml/core/base.css);
+
+/* import screen layout */
+@import url(/css/vendor/yaml/navigation/nav_shinybuttons.css);
+@import url(/css/vendor/yaml/screen/forms.css);
+@import url(/css/vendor/yaml/screen/basemod.css);
+/*@import url(/css/vendor/yaml/screen/basemod_2col_right_13.css);*/
+@import url(/css/vendor/yaml/screen/content.css);
+
+/* import print layout */
+@import url(/css/vendor/yaml/print/print_100_draft.css);
+
+@media screen, projection {
+	#col1 { width: 100%; }
+	
+	/* pagination - START */
+	div.pagination {
+		text-align: center;
+	}
+
+	div.pagination ul {
+		list-style: none;
+	}
+
+	div.pagination ul li {
+		float: left;
+		margin-right: 0.25em;
+		margin-left: 0.25em;
+	}
+
+	div.pagination ul li a {
+		border: 0.063em solid #1659C0;
+		color: #1659C0;
+		padding: 0.25em;
+	}
+
+	div.pagination ul li.selected span {
+		background: none repeat scroll 0 0 #C3C1B4;
+		border: 0.063em solid #C3C1B4;
+		color: 	#404040 !important;
+		font-weight: bold;
+		padding: 0.25em;
+	}
+	/* pagination - END */
+}
